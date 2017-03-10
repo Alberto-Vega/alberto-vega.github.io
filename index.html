@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <!-- saved from url=(0071)file:///Users/albertovega/Desktop/Portfolio/bootstrap-prestructure.html -->
-<html ng-app lang="en">
+<html ng-app="myPortfolioApp" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <title>Alberto Vega Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
-<body>
+<body ng-controller="itemControllers">
+  <ul>
+    <li ng-repeat="app in apps">
+        <span>{{app.name}}</span>
+        <p>{{app.description}}</p>
+    </li>
+  </ul>
   <div class="container">
     <div class="row">
       <div class="title-logo col-md-6"><!-- <img src="./bootstrap-prestructure_files/100x100" alt="Logo"class="img-responsive"> --></div>
@@ -134,7 +144,6 @@
   </div>
 </div> -->
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </html>
 
 
