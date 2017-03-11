@@ -18,84 +18,59 @@
 
 <body ng-controller="itemControllers">
   <div class="main container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="title-logo col-md-6">
-        <!-- <img src="./bootstrap-prestructure_files/100x100" alt="Logo"class="img-responsive"> --></div>
-      <div class="col-md-6 text-right">
-        <h1 class="title-super text-thin text-uppercase">Alberto Vega</h1>
-        <h3>iOS DEVELOPER</h3>
+    <div class="container">
+      <div class="row">
+        <div class="title-logo col-md-6">
+        </div>
+        <div class="col-md-6 text-right">
+          <h1 class="title-super text-thin text-uppercase">Alberto Vega</h1>
+          <h3>iOS DEVELOPER</h3>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+        <div>
+          <div class="row filler-space  text-left">
+            <h2 class="text-muted">Featured Work</h2>
+          </div>
+        </div>
       </div>
-      <div>
-        <!--     <div class="row">
-      <div class="col-md-12">
-      <img class="img-responsive" src="./bootstrap-prestructure_files/Development.jpg" alt="main iOS Development image!">
+      <div ng-repeat="app in apps" class="row text-center">
+        <div class="col-md-3">
+          <img class="img-responsive" ng-src="{{app.imageUrl}}" alt="{{app.name}}">
+          <p><a href="{{app.link}}">Link to project</a></p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <h3 class="text uppercase">{{app.name}}</h3>
+          <p>{{app.description}}</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="filler-space col-md-12">
+        </div>
       </div>
-    </div> -->
-        <div class="row filler-space  text-left">
-          <h2 class="text-muted">Featured Work</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+        <div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <p><a href="https://github.com/Alberto-Vega" style="color:#BCBBBB"><b>Github</b></a></p>
+          </div>
+          <div class="col-md-4">
+            <p><a href="https://linkedin.com/in/albertovegagonzalez" style="color:#BCBBBB"><b>LinkedIn</b></a></p>
+          </div>
+          <div class="col-md-4">
+            <p><a href="https://gist.github.com/Alberto-Vega/09f3a5a988af3be3a53ca7c4eadceb4a" style="color:#BCBBBB"><b>Resume</b></a></p>
+          </div>
         </div>
       </div>
     </div>
-    <div ng-repeat="app in apps" class="row text-center">
-      <div class="col-md-3">
-        <img class="img-responsive" ng-src="{{app.imageUrl}}" alt="{{app.name}}">
-        <p><a href="{{app.link}}">Link to project</a></p>
-      </div>
-      <div class="col-md-2"></div>
-      <div class="col-md-5">
-        <h3 class="text uppercase">{{app.name}}</h3>
-        <p>{{app.description}}</p>
-      </div>
-      <div class="col-md-2"></div>
-      <div class="filler-space col-md-12">
-      </div>
-    </div>
-
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <hr>
-    </div>
-    <div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <p><a href="https://github.com/Alberto-Vega" style="color:#BCBBBB"><b>Github</b></a></p>
-      </div>
-      <div class="col-md-4">
-        <p><a href="https://linkedin.com/in/albertovegagonzalez" style="color:#BCBBBB"><b>LinkedIn</b></a></p>
-      </div>
-      <div class="col-md-4">
-        <p><a href="https://gist.github.com/Alberto-Vega/09f3a5a988af3be3a53ca7c4eadceb4a" style="color:#BCBBBB"><b>Resume</b></a></p>
-      </div>
-    </div>
   </div>
-
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-      </div>
-      <div class="modal-body">
-        <img class="img-responsive" src="./bootstrap-prestructure_files/SwiftQwizz.png">
-        This was my first project in this class. I learned a lot about HTML and CSS.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 </body>
-</div>
-</div>
+
 </html>
