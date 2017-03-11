@@ -3,6 +3,10 @@ body {
   color: #747704;
   font-weight: 300;
 }
+
+.main {
+  background: linear-gradient(to bottom, #ffffff 25%,#eeeeee 100%);
+}
 .text-muted {
   color: #BCBBBB;
 }
