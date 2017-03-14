@@ -1,0 +1,14 @@
+<div ng-repeat="app in model.apps" class="row text-center">
+    <div class="col-md-3">
+        <img class="img-responsive" ng-src="{{app.imageUrl}}" alt="{{app.name}}">
+        <p><a href="{{app.link}}">Link to project</a></p>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-5">
+        <h3 class="text uppercase">{{app.name}}</h3>
+        <p>{{app.description}}</p>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="filler-space col-md-12">
+    </div>
+</div>
